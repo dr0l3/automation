@@ -1,3 +1,4 @@
+alias cd..='cd ..'
 alias gs='git status'
 alias gaa='git add -A'
 alias gcv='git commit -v'
