@@ -1,0 +1,13 @@
+alias gs='git status'
+alias gaa='git add -A'
+alias gcv='git commit -v'
+alias gp='git push'
+alias _alias='vi ~/alias'
+alias _reload='source ~/.bashrc'
+alias _dow='cd ~/Downloads'
+shebang() {
+   touch $1
+   echo '#!/usr/bin/env bash' > $1
+   vi $1
+}
+
