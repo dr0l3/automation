@@ -2,7 +2,7 @@
 
 #WORK IN PROGRESS
 #move all files to ~
-echo '
+cp bash_aliases ~/.bash_aliases
 if [ -f ~/.bash_aliases ]; then
-    source ~/.bash_aliases
-fi' > ~/.bashrc
+    source ~/.bash_aliases >> ~/.profile
+fi
