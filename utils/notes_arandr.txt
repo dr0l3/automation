@@ -1,0 +1,4 @@
+1. Open the utility
+2. Create desired layout
+3. Save file (it will be a .sh file)
+4. attach the file to .profile or something similar
