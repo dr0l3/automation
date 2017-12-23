@@ -1,0 +1,13 @@
+-- Connecting to a speaker
+
+bluetoothctl
+list  <-- to list devices
+connect <address>
+
+wait
+
+-- Turn on sound
+
+if no sound is playing use
+amixer <- to list devices
+amixer sset <device> unmute
