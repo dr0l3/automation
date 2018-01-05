@@ -16,4 +16,24 @@ shebang() {
    echo '#!/usr/bin/env bash' > $1
    vi $1
 }
+freshMaster() {
+  git checkout master
+  git pull origin master
+}
+newfeaturebranch(){
+  freshMaster
+  git checkout -b feature/$1
+}
+gpsu(){
+  current_branch="$(git branch | grep \* | awk '{print $2}')"
+  git push --set-upstream origin "$current_branch"
+}
+_gcv(){
+  current_branch="$(git branch | grep \* | awk '{print $2}')"
+  echo "$current_branch"
 
+  IFS='/'        # space is set as delimiter
+  read -ra ADDR <<< "$current_branch"    # str is read into an array as tokens separated by IFS
+  task_number="${ADDR[1]}"
+  git commit -v -m "ref $task_number," -e
+}
