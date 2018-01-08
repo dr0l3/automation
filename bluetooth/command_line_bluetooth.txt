@@ -11,3 +11,4 @@ wait
 if no sound is playing use
 amixer <- to list devices
 amixer sset <device> unmute
+amixer sset <device> 100%
