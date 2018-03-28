@@ -1,0 +1,8 @@
+1) install visualvm or jvmtop
+2) keep running things until the memory stuff is correct
+
+places to start
+
+1) SBT_OPTS should be set on .zshrc
+2) jvm flags should be set in the sbt options in intellij
+3) jvm flags should be set for the scala compiler in intellij
