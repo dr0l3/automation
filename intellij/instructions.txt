@@ -1,0 +1,7 @@
+untar the blod to some location
+edit the .desktop file
+move the .desktop file to /usr/share/applications
+i3-msg restart
+start idea
+answer yes to loading the settings from previous directory
+celebrate
