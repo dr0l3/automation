@@ -1,6 +1,7 @@
 untar the blod to some location
 edit the .desktop file
 move the .desktop file to /usr/share/applications
+update i3 conf with new path
 i3-msg restart
 start idea
 answer yes to loading the settings from previous directory
